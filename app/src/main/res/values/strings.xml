@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HandFull</string>
+    <string name="bebidas">Bebidas</string>
+    <string name="salgados">Salgados</string>
+    <string name="carrinho">Carrinho</string>
+    <string name="cadastro">Cadastro</string>
+    <string name="comprar">Comprar</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="email">Email</string>
+</resources>
