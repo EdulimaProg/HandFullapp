@@ -1,9 +1,11 @@
 package com.example.handfull
 
-import android.content.Intent
+
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_login.*
+import android.content.Intent
+
 
 class Login: AppCompatActivity() {
 
@@ -12,11 +14,13 @@ class Login: AppCompatActivity() {
         setContentView((R.layout.activity_login));
 
         fun OpenSignUp(){
-            val intent = Intent(this, SignUp::class.java);
-            startActivity(intent);
-        }
+            val intent = Intent(this, SignUp::class.java)
+            startActivity(intent)
 
-        se_cadastrar.setOnClickListener{OpenSignUp()}
+        }
+        val cadastrar = findViewById<Button>(R.id.cadastrar)
+
+        cadastrar.setOnClickListener{OpenSignUp()}
 
 
         fun OpenMenu(){
@@ -24,6 +28,10 @@ class Login: AppCompatActivity() {
             startActivity(intent);
         }
 
-        login.setOnClickListener{OpenMenu()}
+        val login = findViewById<Button>(R.id.login)
+
+        login?.setOnClickListener(){
+            OpenMenu()
+        }
     }
 }

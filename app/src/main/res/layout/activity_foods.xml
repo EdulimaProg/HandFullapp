@@ -24,56 +24,13 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <ImageButton
-        android:id="@+id/voltar"
-        android:layout_width="111dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="580dp"
-        android:background="@color/red"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lista_lanche"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/mais"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/menorque" />
-
-    <ImageButton
-        android:id="@+id/seguir"
-        android:layout_width="85dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="580dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/menos"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/maiorque" />
-
-    <ImageButton
-        android:id="@+id/mais"
-        android:layout_width="102dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="580dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/menos"
-        app:layout_constraintStart_toEndOf="@+id/voltar"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/mais" />
-
-    <ImageButton
-        android:id="@+id/menos"
-        android:layout_width="108dp"
-        android:layout_height="76dp"
-        android:layout_marginTop="580dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seguir"
-        app:layout_constraintStart_toEndOf="@+id/mais"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/menos" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
