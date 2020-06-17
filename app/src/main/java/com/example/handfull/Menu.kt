@@ -12,16 +12,24 @@ class Menu:AppCompatActivity() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
-        fun OpenMenu(){
+        fun OpenLanche(){
             val intent = Intent(this, Foods::class.java);
+            startActivity(intent);
+        }
+        fun OpenSuco(){
+            val intent = Intent(this, Drinks::class.java);
             startActivity(intent);
         }
 
         val lanches = findViewById<ImageView>(R.id.click_salgados)
+        val suco = findViewById<ImageView>(R.id.click_bebidas)
 
         lanches.setOnClickListener{
-            OpenMenu()
+            OpenLanche()
         }
 
+        suco.setOnClickListener{
+            OpenSuco()
+        }
     }
 }
