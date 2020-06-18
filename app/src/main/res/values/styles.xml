@@ -1,11 +1,15 @@
-<resources>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
 
     <!-- Base application theme. -->
 
-    <style name="ThemeTitle" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ThemeTitle" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/yellow</item>
         <item name="colorPrimaryDark">@color/red</item>
     </style>
+
+    <style name="Theme.Default" parent="@android:style/Theme.Holo"></style>
+    <style name="Theme.NoTitle" parent="@android:style/Theme.Holo.NoActionBar"></style>
+    <style name="Theme.FullScreen" parent="@android:style/Theme.Holo.NoActionBar.Fullscreen"></style>
 
 </resources>

@@ -40,7 +40,7 @@ class Foods: AppCompatActivity() {
     private fun configureList(lanches : List<Lanches>){
         val recyclerView = lista_lanche_recicleview
         recyclerView.adapter = LancheListAdpter(lanches, this)
-        val layoutManager = StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL)
+        val layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = layoutManager
 
     }
