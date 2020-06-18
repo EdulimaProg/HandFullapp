@@ -1,20 +1,17 @@
 package com.example.handfull.Retrofit
 
+import com.example.handfull.Retrofit.Services.Endpoint
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
+import retrofit2.create
 
 class NetworkUtils {
 
-    companion object {
+    private val retrofit = Retrofit.Builder()
+        .baseUrl("https://handfull.herokuapp.com/api/")
+        .addConverterFactory(GsonConverterFactory.create())
+        .build()
 
-        /** Retorna uma Instância do Client Retrofit para Requisições
-         * @param path Caminho Principal da API
-         */
-        fun getRetrofitInstance(path : String) : Retrofit {
-            return Retrofit.Builder()
-                .baseUrl(path)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build()
-        }
-    }
+    fun lancheList() = retrofit.create(Endpoint::class.java)
+
 }

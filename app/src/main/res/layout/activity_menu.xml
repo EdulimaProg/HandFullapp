@@ -23,13 +23,13 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="350dp"
-        android:layout_height="205dp"
-        android:layout_marginStart="70dp"
-        android:layout_marginLeft="70dp"
-        android:layout_marginTop="72dp"
-        android:layout_marginEnd="26dp"
-        android:layout_marginRight="26dp"
+        android:layout_width="358dp"
+        android:layout_height="138dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,8 +55,10 @@
 
     <ImageButton
         android:id="@+id/click_bebidas"
-        android:layout_width="140dp"
+        android:layout_width="fill_parent"
         android:layout_height="211dp"
+        android:layout_marginStart="240dp"
+        android:layout_marginLeft="240dp"
         android:layout_marginEnd="32dp"
         android:layout_marginRight="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -69,11 +71,14 @@
 
     <ImageButton
         android:id="@+id/click_salgados"
-        android:layout_width="140dp"
+        android:layout_width="fill_parent"
         android:layout_height="211dp"
         android:layout_marginStart="32dp"
         android:layout_marginLeft="32dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginRight="240dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"
         app:layout_constraintVertical_bias="0.4"

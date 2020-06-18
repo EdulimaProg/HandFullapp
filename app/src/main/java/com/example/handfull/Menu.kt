@@ -12,6 +12,7 @@ class Menu:AppCompatActivity() {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
 
+
         fun OpenLanche(){
             val intent = Intent(this, Foods::class.java);
             startActivity(intent);
