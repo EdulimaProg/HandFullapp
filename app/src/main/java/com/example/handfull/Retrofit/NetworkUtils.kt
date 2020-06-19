@@ -13,5 +13,6 @@ class NetworkUtils {
         .build()
 
     fun lancheList() = retrofit.create(Endpoint::class.java)
+    fun cadastro() = retrofit.create(Endpoint::class.java)
 
 }

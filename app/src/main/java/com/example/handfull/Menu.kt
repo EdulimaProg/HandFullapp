@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 class Menu:AppCompatActivity() {
 
@@ -22,8 +23,8 @@ class Menu:AppCompatActivity() {
             startActivity(intent);
         }
 
-        val lanches = findViewById<ImageView>(R.id.click_salgados)
-        val suco = findViewById<ImageView>(R.id.click_bebidas)
+        val lanches = findViewById<CardView>(R.id.card_view_lanches)
+        val suco = findViewById<CardView>(R.id.card_view_sucos)
 
         lanches.setOnClickListener{
             OpenLanche()
