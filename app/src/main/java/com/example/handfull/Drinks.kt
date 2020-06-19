@@ -27,7 +27,7 @@ class Drinks: AppCompatActivity() {
 
         call.enqueue(object : Callback<List<Sucos>?>{
             override fun onFailure(call: Call<List<Sucos>?>, t: Throwable) {
-                TODO("Not yet implemented")
+                TODO("Not yet implemented por enquanto")
             }
 
             override fun onResponse(
