@@ -23,15 +23,14 @@ class Menu:AppCompatActivity() {
             startActivity(intent);
         }
 
-        val lanches = findViewById<CardView>(R.id.card_view_lanches)
-        val suco = findViewById<CardView>(R.id.card_view_sucos)
-
-        lanches.setOnClickListener{
-            OpenLanche()
+        fun OpenCombos(){
+            val intent = Intent(this, Drinks::class.java);
+            startActivity(intent);
         }
+        val combos = findViewById<CardView>(R.id.card_view_combos)
 
-        suco.setOnClickListener{
-            OpenSuco()
+        combos.setOnClickListener{
+            OpenCombos()
         }
     }
 }

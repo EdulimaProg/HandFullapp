@@ -3,6 +3,7 @@ package com.example.handfull
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import kotlinx.android.synthetic.*
 import kotlinx.android.synthetic.main.activity_login.*
 import android.widget.Button as Button
@@ -19,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
 
         }
-        val cadastrar = findViewById<Button>(R.id.cadastrar)
+        val cadastrar = findViewById<TextView>(R.id.cadastrar)
 
         cadastrar.setOnClickListener{
             OpenSignUp()

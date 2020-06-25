@@ -3,37 +3,60 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_login"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_height="728dp"
     android:background="@color/white"
-    tools:context=".menu" >
+    android:orientation="vertical"
+    tools:context=".menu">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="730dp"
-        android:orientation="vertical">
+        android:layout_height="69dp">
 
         <TextView
             android:id="@+id/textView10"
-            android:layout_width="412dp"
+            android:layout_width="fill_parent"
             android:layout_height="74dp"
             android:background="@color/red"
             android:gravity="center"
             android:text="Menu"
             android:textColor="@color/yellow"
             android:textSize="40dp"
-            tools:layout_editor_absoluteX="-1dp"
-            tools:layout_editor_absoluteY="0dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="418dp"
+            android:layout_height="157dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/handfull_logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_sucos"
+            android:id="@+id/card_view_promo"
             android:layout_width="397dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            app:cardBackgroundColor="#FFFFFF"
-            app:cardElevation="16dp"
-            app:cardCornerRadius="4dp">
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="16dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -45,73 +68,41 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/info_sucos"
+                        android:id="@+id/info_promo"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center_horizontal"
-                        android:text="Sucos"
+                        android:text="Promoções todos os dias"
                         android:textSize="20dp" />
 
                     <TextView
-                        android:id="@+id/info_desc_suco"
+                        android:id="@+id/info_desc_promo"
                         android:layout_width="match_parent"
                         android:layout_height="24dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="Sucos dos Mais Variados Sabores"
+                        android:text="Combos Baratos"
                         android:textSize="10dp" />
                 </LinearLayout>
             </FrameLayout>
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view_lanches"
-            android:layout_width="397dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            app:cardElevation="16dp"
-            app:cardCornerRadius="4dp">
+    </LinearLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/info_lanches"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:gravity="center_horizontal"
-                        android:text="Salgados"
-                        android:textSize="20dp" />
-
-                    <TextView
-                        android:id="@+id/info_desc_lanches"
-                        android:layout_width="match_parent"
-                        android:layout_height="24dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="center"
-                        android:text="Salgados dos Mais Variados Sabores"
-                        android:textSize="10dp" />
-                </LinearLayout>
-            </FrameLayout>
-        </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_combos"
             android:layout_width="397dp"
             android:layout_height="80dp"
             android:layout_gravity="center"
-            android:layout_marginTop="4dp"
-            app:cardElevation="16dp"
-            app:cardCornerRadius="4dp">
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="16dp">
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -144,5 +135,39 @@
         </androidx.cardview.widget.CardView>
 
     </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="386dp">
+
+        <Button
+            android:id="@+id/perfil"
+            android:layout_width="185dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginLeft="31dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="263dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pedidos"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/pedidos"
+            android:layout_width="185dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="31dp"
+            android:layout_marginRight="31dp"
+            android:layout_marginBottom="263dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/perfil"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
