@@ -44,9 +44,7 @@ class   Foods: AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
     }
-    fun addCart(){
 
-    }
 
 
 }
