@@ -1,5 +1,6 @@
 package com.example.handfull
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -15,8 +16,9 @@ import kotlinx.android.synthetic.main.activity_foods.*
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.io.Serializable
 
-class Drinks: AppCompatActivity() {
+class Drinks: AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -24,6 +26,7 @@ class Drinks: AppCompatActivity() {
 
         setContentView((R.layout.activity_drinks));
         val call = NetworkUtils().lancheList().getSucos()
+
 
         call.enqueue(object : Callback<List<Sucos>?>{
             override fun onFailure(call: Call<List<Sucos>?>, t: Throwable) {
@@ -49,6 +52,9 @@ class Drinks: AppCompatActivity() {
         recyclerView.layoutManager = layoutManager
 
     }
+
+
+
 
 
 

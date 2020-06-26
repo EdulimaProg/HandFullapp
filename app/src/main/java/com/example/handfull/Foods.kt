@@ -13,7 +13,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class Foods: AppCompatActivity() {
+class   Foods: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState);
@@ -42,6 +42,9 @@ class Foods: AppCompatActivity() {
         recyclerView.adapter = LancheListAdpter(lanches, this)
         val layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = layoutManager
+
+    }
+    fun addCart(){
 
     }
 
