@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:background="@color/red"
         android:gravity="center"
-        android:text="@string/bebidas"
+        android:text="Promocões"
         android:textColor="@color/yellow"
         android:textSize="56sp"
         app:layout_constraintBottom_toBottomOf="parent"

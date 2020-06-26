@@ -1,6 +1,8 @@
 package com.example.handfull.adapter
 
 import android.content.Context
+import android.content.Intent
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,7 +46,14 @@ class SucosLancheAdapter (private val listas: List<Sucos>,
             descricao.text = lanche.desc
 
             add_cart.setOnClickListener {
-
+                add_cart.setOnClickListener {
+                    val bundle = Bundle()
+                    bundle.putString("Nome item", lanche.nome)
+                    bundle.putString("Valor ", lanche.valor)
+                    val intent = Intent(itemView.context, com.example.handfull.Checkout::class.java)
+                    intent.putExtras(bundle)
+                    itemView.context.startActivity(intent)
+                }
             }
         }
     }

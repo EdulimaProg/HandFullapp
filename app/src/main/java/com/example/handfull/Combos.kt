@@ -8,6 +8,7 @@ import com.example.handfull.Model.Lanches
 import com.example.handfull.Model.Sucos
 import com.example.handfull.Retrofit.NetworkUtils
 import com.example.handfull.Retrofit.Services.Endpoint
+import com.example.handfull.adapter.CombosListAdapter
 import com.example.handfull.adapter.LancheListAdpter
 import com.example.handfull.adapter.SucosLancheAdapter
 import kotlinx.android.synthetic.main.activity_drinks.*
@@ -22,29 +23,29 @@ class Combos: AppCompatActivity() {
         super.onCreate(savedInstanceState);
 
 
-        setContentView((R.layout.activity_drinks));
-        val call = NetworkUtils().lancheList().getSucos()
+        setContentView((R.layout.activity_foods));
+        val call = NetworkUtils().lancheList().getLanches()
 
-        call.enqueue(object : Callback<List<Sucos>?>{
-            override fun onFailure(call: Call<List<Sucos>?>, t: Throwable) {
+        call.enqueue(object : Callback<List<Lanches>?>{
+            override fun onFailure(call: Call<List<Lanches>?>, t: Throwable) {
                 TODO("Not yet implemented por enquanto")
             }
 
             override fun onResponse(
-                call: Call<List<Sucos>?>,
-                response: Response<List<Sucos>?>
+                call: Call<List<Lanches>?>,
+                response: Response<List<Lanches>?>
             ) {
                 response?.body()?.let {
-                    val sucos : List<Sucos> = it
-                    configureList(sucos)
+                    val lanches : List<Lanches> = it
+                    configureList(lanches)
                 }
             }
 
         })
     }
-    private fun configureList(lanches : List<Sucos>){
-        val recyclerView = sucos_list_recicleview
-        recyclerView.adapter = SucosLancheAdapter(lanches, this)
+    private fun configureList(lanches : List<Lanches>){
+        val recyclerView = lista_lanche_recicleview
+        recyclerView.adapter = LancheListAdpter(lanches, this)
         val layoutManager = StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL)
         recyclerView.layoutManager = layoutManager
 

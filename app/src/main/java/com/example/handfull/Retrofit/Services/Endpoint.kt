@@ -12,8 +12,9 @@ interface Endpoint {
     @GET("listar-lanches")
     fun getLanches() : Call<List<Lanches>>
 
-    @GET("listar-sucos")
+    @GET("promo")
     fun getSucos() : Call<List<Sucos>>
+
 
 
     @POST("cadastro/usuario")

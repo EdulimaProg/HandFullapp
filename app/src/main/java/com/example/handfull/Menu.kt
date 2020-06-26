@@ -18,7 +18,7 @@ class Menu:AppCompatActivity() {
             val intent = Intent(this, Foods::class.java);
             startActivity(intent);
         }
-        fun OpenSuco(){
+        fun OpenPromo(){
             val intent = Intent(this, Drinks::class.java);
             startActivity(intent);
         }
@@ -27,10 +27,14 @@ class Menu:AppCompatActivity() {
             val intent = Intent(this, Drinks::class.java);
             startActivity(intent);
         }
+        val promo =  findViewById<CardView>(R.id.card_view_promo)
         val combos = findViewById<CardView>(R.id.card_view_combos)
 
         combos.setOnClickListener{
-            OpenCombos()
+            OpenLanche()
+        }
+        promo.setOnClickListener{
+            OpenPromo()
         }
     }
 }
