@@ -73,7 +73,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center_horizontal"
-                        android:text="Promoções todos os dias"
+                        android:text="Promoções"
                         android:textSize="20dp" />
 
                     <TextView
@@ -82,7 +82,7 @@
                         android:layout_height="24dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="Combos Baratos"
+                        android:text="Todos os dias"
                         android:textSize="10dp" />
                 </LinearLayout>
             </FrameLayout>
@@ -128,7 +128,7 @@
                         android:layout_height="24dp"
                         android:layout_marginTop="5dp"
                         android:gravity="center"
-                        android:text="Combos Baratos"
+                        android:text="Super Baratos"
                         android:textSize="10dp" />
                 </LinearLayout>
             </FrameLayout>
