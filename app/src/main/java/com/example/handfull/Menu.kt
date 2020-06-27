@@ -14,27 +14,48 @@ class Menu:AppCompatActivity() {
         setContentView(R.layout.activity_menu);
 
 
-        fun OpenLanche(){
+        fun OpenLanche() {
             val intent = Intent(this, Foods::class.java);
             startActivity(intent);
         }
-        fun OpenPromo(){
+
+        fun OpenPromo() {
+            val intent = Intent(this, Drinks::class.java);
+            startActivity(intent);
+        }
+        fun openCart() {
+            val intent = Intent(this, Checkout::class.java);
+            startActivity(intent);
+        }
+        fun openCode() {
+            val intent = Intent(this, Code::class.java);
+            startActivity(intent);
+        }
+
+        fun OpenCombos() {
             val intent = Intent(this, Drinks::class.java);
             startActivity(intent);
         }
 
-        fun OpenCombos(){
-            val intent = Intent(this, Drinks::class.java);
-            startActivity(intent);
-        }
-        val promo =  findViewById<CardView>(R.id.card_view_promo)
+        val promo = findViewById<CardView>(R.id.card_view_promo)
         val combos = findViewById<CardView>(R.id.card_view_combos)
+        val cart = findViewById<Button>(R.id.carrinho)
+        val code = findViewById<Button>(R.id.code)
 
-        combos.setOnClickListener{
+        combos.setOnClickListener {
             OpenLanche()
         }
-        promo.setOnClickListener{
+        promo.setOnClickListener {
             OpenPromo()
         }
-    }
+        cart.setOnClickListener{
+            openCart()
+        }
+        code.setOnClickListener{
+            openCode()
+        }
+
+        }
 }
+
+

@@ -43,8 +43,7 @@ class LancheListAdpter (private val listas: List<Lanches>,
             descricao.text = lanche.desc
 
 
-            add_cart.setOnClickListener {
-                add_cart.setOnClickListener {
+                 add_cart.setOnClickListener {
                     val bundle = Bundle()
                     bundle.putString("Nome item", lanche.nome)
                     bundle.putString("Valor ", lanche.valor)
@@ -55,5 +54,4 @@ class LancheListAdpter (private val listas: List<Lanches>,
             }
 
         }
-    }
 }

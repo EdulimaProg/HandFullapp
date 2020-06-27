@@ -7,7 +7,7 @@
     android:layout_height="728dp"
     android:background="@color/white"
     android:orientation="vertical"
-    tools:context=".menu">
+    tools:context=".Menu">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="418dp"
+            android:layout_width="wrap_content"
             android:layout_height="157dp"
             android:layout_marginBottom="8dp"
             android:src="@drawable/handfull_logo"
@@ -141,7 +141,7 @@
         android:layout_height="386dp">
 
         <Button
-            android:id="@+id/perfil"
+            android:id="@+id/code"
             android:layout_width="140dp"
             android:layout_height="80dp"
             android:layout_marginTop="16dp"
@@ -155,7 +155,7 @@
             app:layout_constraintVertical_bias="0.444" />
 
         <Button
-            android:id="@+id/pedidos"
+            android:id="@+id/carrinho"
             android:layout_width="140dp"
             android:layout_height="80dp"
             android:layout_marginStart="36dp"
@@ -164,7 +164,7 @@
             android:layout_marginBottom="263dp"
             android:text="Carrinho"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/perfil"
+            app:layout_constraintEnd_toStartOf="@+id/code"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

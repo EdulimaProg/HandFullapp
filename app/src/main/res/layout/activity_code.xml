@@ -6,12 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".code">
+    tools:context=".Code">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="419dp"
-        android:layout_height="254dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -28,30 +28,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <ImageButton
-        android:id="@+id/voltar"
-        android:layout_width="205dp"
-        android:layout_height="76dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/seguir"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/menorque" />
-
-    <ImageButton
-        android:id="@+id/seguir"
-        android:layout_width="205dp"
-        android:layout_height="76dp"
-        android:background="@color/red"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/voltar"
-        app:layout_constraintTop_toBottomOf="@+id/editText8"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/maiorque" />
 
     <TextView
         android:id="@+id/textView15"
