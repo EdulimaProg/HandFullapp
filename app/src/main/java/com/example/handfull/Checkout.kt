@@ -1,5 +1,6 @@
 package com.example.handfull
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_checkout.*
@@ -24,6 +25,16 @@ class Checkout:AppCompatActivity() {
 
         button_pagamento.setOnClickListener(){
 
+            val intent = Intent(this, Pagamento::class.java)
+
+            var pedido = (10000000..99999999).random();
+
+            println(pedido)
+
+            intent.putExtra("num_pedido", pedido.toString())
+            intent.putExtra("valor_item_topag", valorItem)
+
+            startActivity(intent)
 
         }
     }

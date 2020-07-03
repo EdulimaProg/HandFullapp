@@ -27,6 +27,8 @@
         </activity>
         <activity android:name=".Code">
         </activity>
+        <activity android:name=".Pagamento">
+        </activity>
     </application>
 
 </manifest>
