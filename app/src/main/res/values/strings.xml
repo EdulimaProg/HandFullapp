@@ -6,11 +6,14 @@
     <string name="cadastro">Cadastro</string>
     <string name="comprar">Comprar</string>
     <string name="cadastrar">Cadastrar</string>
-    <string name="email">Email</string>
+    <string name="email">E-mail</string>
     <string name="promocoes">Promoções</string>
     <string name="desc_salgados">Super Baratos</string>
     <string name="desc_promo">Todos os Dias!</string>
     <string name="img_desc">Logo HandFull</string>
     <string name="menu">Menu</string>
     <string name="button_code">Código da Compra</string>
+    <string name="nome">Nome</string>
+    <string name="cpf">CPF</string>
+    <string name="senha">Senha</string>
 </resources>
