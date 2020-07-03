@@ -13,7 +13,7 @@ interface Endpoint {
     fun getSucos() : Call<List<Sucos>>
 
     @GET("item")
-    fun getItem(@Body itemRequest: ItemRequest) : Call<List<Item>>
+    fun getItem(@Body itemRequest: ItemRequest) : Call<Item>
 
     @POST("cadastro/usuario")
     fun cadastro(@Body usuario: Usuario) : Call<Usuario>

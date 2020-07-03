@@ -11,9 +11,13 @@ class Checkout:AppCompatActivity() {
         super.onCreate(savedInstanceState);
         setContentView((R.layout.activity_checkout));
 
-        print(getIntent().getBundleExtra("nome_item"));
+
+        var nomeItem = intent.getStringExtra("nome_item")
+        var valorItem = intent.getStringExtra("valor_item")
+        //print(getIntent().getBundleExtra("item"));
 
 
-
+        nome_item.text = nomeItem
+        valor_item.text = valorItem
     }
 }
