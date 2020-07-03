@@ -17,7 +17,14 @@ class Checkout:AppCompatActivity() {
         //print(getIntent().getBundleExtra("item"));
 
 
+        println(valorItem)
+
         nome_item.text = nomeItem
         valor_item.text = valorItem
+
+        button_pagamento.setOnClickListener(){
+
+
+        }
     }
 }

@@ -50,7 +50,7 @@ class SucosLancheAdapter (private val listas: List<Sucos>,
                 add_cart.setOnClickListener {
                     val bundle = Bundle()
                     bundle.putString("nome_item", lanche.nome)
-                    bundle.putString("valor ", lanche.valor)
+                    bundle.putString("valor_item", lanche.valor)
                     val intent = Intent(itemView.context, com.example.handfull.Checkout::class.java)
                     intent.putExtras(bundle)
                     itemView.context.startActivity(intent)
