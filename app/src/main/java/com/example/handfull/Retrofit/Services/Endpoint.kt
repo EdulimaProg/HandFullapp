@@ -1,9 +1,6 @@
 package com.example.handfull.Retrofit.Services
 
-import com.example.handfull.Model.Lanches
-import com.example.handfull.Model.Sucos
-import com.example.handfull.Model.Usuario
-import com.example.handfull.Model.UsuarioLogin
+import com.example.handfull.Model.*
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -15,7 +12,8 @@ interface Endpoint {
     @GET("promo")
     fun getSucos() : Call<List<Sucos>>
 
-
+    @GET("item")
+    fun getItem(@Body itemRequest: ItemRequest) : Call<List<Item>>
 
     @POST("cadastro/usuario")
     fun cadastro(@Body usuario: Usuario) : Call<Usuario>

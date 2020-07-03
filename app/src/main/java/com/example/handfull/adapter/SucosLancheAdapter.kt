@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.handfull.Model.Sucos
 import com.example.handfull.Data.Checkout
+import com.example.handfull.Foods
 import com.example.handfull.R
 import kotlinx.android.synthetic.main.lista_lanche.view.*
 
@@ -48,8 +49,8 @@ class SucosLancheAdapter (private val listas: List<Sucos>,
             add_cart.setOnClickListener {
                 add_cart.setOnClickListener {
                     val bundle = Bundle()
-                    bundle.putString("Nome item", lanche.nome)
-                    bundle.putString("Valor ", lanche.valor)
+                    bundle.putString("nome_item", lanche.nome)
+                    bundle.putString("valor ", lanche.valor)
                     val intent = Intent(itemView.context, com.example.handfull.Checkout::class.java)
                     intent.putExtras(bundle)
                     itemView.context.startActivity(intent)

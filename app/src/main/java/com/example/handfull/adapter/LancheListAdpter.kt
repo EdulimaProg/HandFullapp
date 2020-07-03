@@ -45,8 +45,8 @@ class LancheListAdpter (private val listas: List<Lanches>,
 
                  add_cart.setOnClickListener {
                     val bundle = Bundle()
-                    bundle.putString("Nome item", lanche.nome)
-                    bundle.putString("Valor ", lanche.valor)
+                    bundle.putString("nome_item", lanche.nome)
+                    bundle.putString("valor ", lanche.valor)
                     val intent = Intent(itemView.context, Checkout::class.java)
                     intent.putExtras(bundle)
                     itemView.context.startActivity(intent)
