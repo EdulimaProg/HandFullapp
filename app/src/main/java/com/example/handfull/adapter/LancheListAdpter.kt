@@ -12,7 +12,7 @@ import com.example.handfull.Checkout
 import com.example.handfull.Model.Lanches
 import com.example.handfull.R
 import kotlinx.android.synthetic.main.lista_lanche.view.*
-
+//model para a listagem de lanches
 class LancheListAdpter (private val listas: List<Lanches>,
                         private val context: Context) : Adapter<LancheListAdpter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LancheListAdpter.ViewHolder {

@@ -14,7 +14,7 @@ import com.example.handfull.Model.Combos
 import com.example.handfull.R
 import kotlinx.android.synthetic.main.lista_lanche.view.*
 
-
+//model para a listagem de combos
 class CombosListAdapter (private val listas: List<Combos>,
                         private val context: Context) : Adapter<CombosListAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CombosListAdapter.ViewHolder {

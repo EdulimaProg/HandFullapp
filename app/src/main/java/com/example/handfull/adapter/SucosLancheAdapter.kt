@@ -14,7 +14,7 @@ import com.example.handfull.Data.Checkout
 import com.example.handfull.Foods
 import com.example.handfull.R
 import kotlinx.android.synthetic.main.lista_lanche.view.*
-
+//adpater para a listagem de sucos
 class SucosLancheAdapter (private val listas: List<Sucos>,
                         private val context: Context) : Adapter<SucosLancheAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SucosLancheAdapter.ViewHolder {

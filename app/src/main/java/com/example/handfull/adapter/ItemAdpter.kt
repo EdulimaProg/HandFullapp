@@ -2,16 +2,12 @@ package com.example.handfull.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat.startActivity
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
 import com.example.handfull.Checkout
-import com.example.handfull.Model.Combos
-import com.example.handfull.Model.Item
 import com.example.handfull.R
 import kotlinx.android.synthetic.main.lista_lanche.view.*
 

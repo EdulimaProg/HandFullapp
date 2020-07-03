@@ -15,6 +15,6 @@ class NetworkUtils {
     fun lancheList() = retrofit.create(Endpoint::class.java)
     fun cadastro() = retrofit.create(Endpoint::class.java)
     fun login() = retrofit.create(Endpoint::class.java)
-    fun ItemReq() = retrofit.create(Endpoint::class.java)
+    fun pagamento() = retrofit.create(Endpoint::class.java)
 
 }
