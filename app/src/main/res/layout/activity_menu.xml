@@ -5,7 +5,7 @@
     android:id="@+id/activity_login"
     android:layout_width="fill_parent"
     android:layout_height="728dp"
-    android:background="@color/white"
+    android:background="@color/red"
     android:orientation="vertical"
     tools:context=".Menu">
 
