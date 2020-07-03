@@ -16,4 +16,9 @@
     <string name="nome">Nome</string>
     <string name="cpf">CPF</string>
     <string name="senha">Senha</string>
+    <string name="login">Login</string>
+    <string name="sem_senha">Não Tem Senha?</string>
+    <string name="cadastre">Cadastre-se!</string>
+    <string name="hint_email">Digite Seu E-Mail</string>
+    <string name="hint_senha">Insira Sua Senha</string>
 </resources>
