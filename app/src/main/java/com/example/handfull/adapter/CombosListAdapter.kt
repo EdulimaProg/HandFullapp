@@ -35,16 +35,20 @@ class CombosListAdapter (private val listas: List<Combos>,
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bindView(Combos : Combos) {
+            
+            // variaveis que pegam os item da activity
             val nome = itemView.nome
             val preco = itemView.preco
             val descricao = itemView.descricao
             val add_cart = itemView.add_cart
 
 
+            //variaveis que setam o valor nos itens da activities
             nome.text = Combos.nome
             preco.text = Combos.valor
             descricao.text = Combos.desc
 
+            //botão de ação para o carrinho
             add_cart.setOnClickListener {
 
                 val intent = Intent(itemView.context, Checkout::class.java)
