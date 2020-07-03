@@ -19,9 +19,9 @@
             android:layout_height="74dp"
             android:background="@color/red"
             android:gravity="center"
-            android:text="Menu"
+            android:text="@string/menu"
             android:textColor="@color/yellow"
-            android:textSize="40dp"
+            android:textSize="40sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,6 +37,7 @@
             android:layout_width="wrap_content"
             android:layout_height="157dp"
             android:layout_marginBottom="8dp"
+            android:contentDescription="@string/img_desc"
             android:src="@drawable/handfull_logo"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -85,9 +86,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             android:gravity="center_horizontal"
-                            android:text="Salgados"
+                            android:text="@string/salgados"
                             android:textColor="@color/red"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -96,9 +97,9 @@
                             android:layout_height="24dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Super Baratos"
+                            android:text="@string/desc_salgados"
                             android:textColor="@color/red"
-                            android:textSize="10dp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -141,9 +142,9 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="15dp"
                             android:gravity="center_horizontal"
-                            android:text="Promoções"
+                            android:text="@string/promocoes"
                             android:textColor="@color/red"
-                            android:textSize="20dp"
+                            android:textSize="20sp"
                             android:textStyle="bold" />
 
                         <TextView
@@ -152,9 +153,9 @@
                             android:layout_height="24dp"
                             android:layout_marginTop="5dp"
                             android:gravity="center"
-                            android:text="Todos os dias"
+                            android:text="@string/desc_promo"
                             android:textColor="@color/red"
-                            android:textSize="10dp" />
+                            android:textSize="12sp" />
                     </LinearLayout>
                 </FrameLayout>
             </androidx.cardview.widget.CardView>
@@ -177,7 +178,7 @@
             android:layout_marginLeft="40dp"
             android:background="@color/white"
             android:fontFamily="sans-serif"
-            android:text="Carrinho"
+            android:text="@string/carrinho"
             android:textColor="@color/red"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -194,7 +195,7 @@
             android:layout_marginRight="40dp"
             android:background="@color/white"
             android:fontFamily="sans-serif"
-            android:text="Código de Compra"
+            android:text="@string/button_code"
             android:textColor="@color/red"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
