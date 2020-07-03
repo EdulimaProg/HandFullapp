@@ -21,4 +21,6 @@
     <string name="cadastre">Cadastre-se!</string>
     <string name="hint_email">Digite Seu E-Mail</string>
     <string name="hint_senha">Insira Sua Senha</string>
+    <string name="msg_code1">APRESENTE O CÓDIGO:</string>
+    <string name="msg_code2">E RETIRE SEU LANCHE!</string>
 </resources>
